@@ -1,41 +1,61 @@
-# InterviewPrepAI
+# 🚀 InterviewPrepAI
 
-## AI-Powered Interview Preparation Platform
+### AI-Powered Interview Preparation Platform
 
-InterviewPrepAI is a MERN stack application designed to help users prepare for interviews using AI-generated interview questions and session management.
+InterviewPrepAI is a full-stack **MERN application** designed to help students and job seekers prepare for technical interviews through personalized interview sessions, questions, answers, notes, and AI-powered features.
 
--------
+The project provides a structured platform where users can create and manage interview preparation sessions while keeping their questions and learning progress organized.
 
-# Features
+---
 
-## Authentication
+## ✨ Features
+
+### 🔐 Authentication
+
 - User Registration
 - User Login
 - JWT Authentication
 - Protected Routes
+- User Profile
 - Profile Image Upload
 
----
+### 📚 Interview Session Management
 
-## Session Management
-- Create Session
-- Get All Sessions
-- Get Session By ID
-- Delete Session
+- Create Interview Sessions
+- View All Sessions
+- View Individual Sessions
+- Delete Sessions
+- Organize interview preparation by session
 
----
+### ❓ Question Management
 
-## Question Management
-- Add Questions
+- Add Interview Questions
 - Add Answers
-- Pin Questions
-- Add Notes
+- Pin Important Questions
+- Add Personal Notes
+- Review questions inside interview sessions
+
+### 🤖 AI Integration
+
+AI-powered features are planned using the **Google Gemini API**, including:
+
+- AI Question Generation
+- AI-Powered Explanations
+- Personalized Interview Preparation
+- Mock Interview System
 
 ---
 
-# Tech Stack
+# 🛠️ Tech Stack
+
+## Frontend
+
+- React.js
+- Tailwind CSS
+- JavaScript
 
 ## Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -43,95 +63,126 @@ InterviewPrepAI is a MERN stack application designed to help users prepare for i
 - JWT
 - Multer
 
----
+## AI
 
-## Frontend
-- React.js
-- Tailwind CSS
+- Google Gemini API *(Upcoming)*
 
 ---
 
-## AI Integration (Upcoming)
-- Google Gemini API
+# 📁 Project Structure
 
----
-
-# Backend Folder Structure
-
-```bash
-backend/
+```text
+InterviewPrepAi/
 │
-├── config/
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── uploads/
-├── utils/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
 │
-├── server.js
-└── package.json
-```
+├── frontend/
+│   └── interview-prep-ai/
+│       ├── src/
+│       ├── public/
+│       └── package.json
+│
+├── .gitignore
+└── README.md
+⚙️ Getting Started
+1. Clone the Repository
+git clone https://github.com/Vishwajeet18legend/InterviewPrepAi.git
 
----
+Navigate into the project:
 
-# Installation
+cd InterviewPrepAi
+🔧 Backend Setup
 
-## Clone Repository
+Navigate to the backend:
 
-```bash
-git clone https://github.com/SunnyS315/Project-ASV.git
-```
+cd backend
 
----
+Install dependencies:
 
-## Install Dependencies
-
-```bash
 npm install
-```
 
----
+Create a .env file inside the backend folder:
 
-## Create .env File
-
-```env
 PORT=8000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret
-```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 
----
+Start the backend server:
 
-## Run Server
-
-```bash
 npm run dev
-```
 
----
+The backend will run on:
 
-# Current Status
+http://localhost:8000
+💻 Frontend Setup
 
-## Completed
-- Authentication APIs
-- Session APIs
-- Question APIs
-- MongoDB Integration
-- Image Upload System
+Open another terminal and navigate to the frontend:
 
----
+cd frontend/interview-prep-ai
 
-## Upcoming Features
-- AI Question Generation
-- AI Explanation APIs
-- Mock Interview System
+Install dependencies:
 
----
+npm install
 
-# Author
+Start the frontend:
 
-Sunny Srivastava
+npm run dev
 
-CSE (AI & ML) Student  
+The frontend will normally be available at:
+
+http://localhost:5173
+🔑 Environment Variables
+
+The backend requires the following environment variables:
+
+Variable	Description
+PORT	Backend server port
+MONGO_URI	MongoDB connection string
+JWT_SECRET	Secret key used for JWT authentication
+
+⚠️ Never commit your .env file or expose your database credentials and secret keys publicly.
+
+📌 Current Status
+✅ Completed
+ User Authentication
+ JWT Authentication
+ Protected Routes
+ Profile Image Upload
+ Interview Session APIs
+ Question APIs
+ MongoDB Integration
+ Question Pinning
+ Notes Management
+🚧 Upcoming
+ AI Question Generation
+ AI-Powered Question Explanations
+ Google Gemini API Integration
+ Mock Interview System
+ Personalized Interview Recommendations
+ Interview Performance Tracking
+🔗 Repository
+
+GitHub:
+https://github.com/Vishwajeet18legend/InterviewPrepAi
+
+👨‍💻 Author
+Vishwajeet Raj
+
+CSE (AI & ML) Student
 Techno Main Salt Lake, Kolkata
+
+GitHub:
+https://github.com/Vishwajeet18legend
+
+⭐ Project
+
+If you find this project useful, consider giving it a ⭐ on GitHub!
